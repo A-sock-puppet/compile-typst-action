@@ -35,7 +35,7 @@ const parseInputs = (): [string[], string[], string | undefined] => {
   } else {
     outPaths = srcPaths.map(p => {
       let temp = p.split(".");
-      temp[temp.length - 1] = "pdf";
+      temp[temp.length - 1] = "html";
       return temp.join(".");
     })
   }
@@ -69,7 +69,7 @@ const parseInputs = (): [string[], string[], string | undefined] => {
       if (fontsPath) {
         cmd += `--font-path ${fontsPath} `
       }
-      cmd += `${src} ${out}`
+      cmd += `${src} ${out} --format html --features html`
       const res = execSync(cmd);
       console.log(res.toString());
     }

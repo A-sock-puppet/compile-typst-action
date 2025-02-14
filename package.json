@@ -1,7 +1,7 @@
 {
   "name": "compile-typst-action",
   "version": "1.0.0",
-  "description": "GitHub Action to compile Typst code into PDF",
+  "description": "GitHub Action to compile Typst code into HTML",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

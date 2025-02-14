@@ -1,5 +1,5 @@
 name: "Typst Compiler"
-description: "A GitHub Action for compiling Typst files to PDF's using the latest Typst release."
+description: "A GitHub Action for compiling Typst files to HTML's using the latest Typst release."
 author: "Ammar Ahmed"
 branding:
   icon: 'file-plus'
@@ -9,7 +9,7 @@ inputs:
     description: "Space separated list of paths to the .typ files"
     required: true
   output_paths:
-    description: "Space separated list of output paths (must be .pdf) (defaults to the same name as the source_paths)"
+    description: "Space separated list of output paths (must be .html) (defaults to the same name as the source_paths)"
     required: false
   fonts_path:
     description: "Path to the fonts directory used by the Typst compiler"
